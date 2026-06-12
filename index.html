@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of K. Suganthan, BCA 2nd-year student at TBLM College. Aspiring frontend developer specializing in HTML, CSS, and JavaScript.">
+  <title>K. Suganthan | BCA Student & Web Developer Portfolio</title>
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Core stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Background Glowing Effects -->
+  <div class="bg-blobs">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+  <div class="bg-grid"></div>
+
+  <!-- STICKY HEADER -->
+  <header id="header">
+    <div class="nav-container">
+      <a href="#hero" class="logo">
+        <i class="fa-solid fa-code"></i> Suganthan<span>.</span>
+      </a>
+      
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      
+      <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <span class="hero-tag">Welcome to my space</span>
+        <h1>Hi, I'm <br><span class="gradient-text">K. Suganthan</span></h1>
+        <div class="hero-subtitle">
+          I am a <span id="typing-text"></span><span class="typewriter-cursor">|</span>
+        </div>
+        <p class="hero-desc">
+          A passionate 2nd-year BCA student at TBLM College, specializing in crafting highly interactive, modern, and visually appealing web pages using HTML, CSS, and JavaScript.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="glass-btn glass-btn-primary">
+            View My Projects <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#contact" class="glass-btn glass-btn-secondary">
+            Get In Touch
+          </a>
+        </div>
+      </div>
+      
+      <div class="hero-visual">
+        <div class="avatar-wrapper">
+          <div class="avatar-glow-ring"></div>
+          <div class="avatar-card">
+            <!-- Custom Vector Developer SVG -->
+            <svg class="avatar-svg-placeholder" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#8b5cf6" />
+                  <stop offset="100%" stop-color="#06b6d4" />
+                </linearGradient>
+                <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="rgba(139, 92, 246, 0.15)" />
+                  <stop offset="100%" stop-color="rgba(6, 182, 212, 0.15)" />
+                </linearGradient>
+              </defs>
+              <circle cx="50" cy="50" r="45" fill="url(#glowGrad)" stroke="rgba(255,255,255,0.04)" stroke-width="1" />
+              <!-- Screen border -->
+              <rect x="25" y="32" width="50" height="36" rx="5" fill="#070a13" stroke="url(#avatarGrad)" stroke-width="2" />
+              <!-- Code tag elements -->
+              <path d="M 38 45 L 33 50 L 38 55" stroke="#06b6d4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M 62 45 L 67 50 L 62 55" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M 53 42 L 47 58" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/>
+              <!-- Screen Stand -->
+              <path d="M 44 68 L 38 78 H 62 L 56 68 Z" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1.5" />
+              <!-- Floating avatar head elements -->
+              <circle cx="50" cy="20" r="7" fill="url(#avatarGrad)" />
+              <!-- Stylized baseline keyboard representation -->
+              <path d="M 34 78 H 66" stroke="url(#avatarGrad)" stroke-width="2.5" stroke-linecap="round" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT ME SECTION -->
+  <section id="about" class="reveal">
+    <div class="about-container">
+      <div class="section-header">
+        <h2>About Me</h2>
+        <p>A glimpse into who I am and what I do</p>
+      </div>
+      
+      <div class="about-grid">
+        <!-- Interactive JS code preview card -->
+        <div class="about-code-box glass-card">
+          <div class="code-header">
+            <span class="code-dot"></span>
+            <span class="code-dot"></span>
+            <span class="code-dot"></span>
+          </div>
+          <div class="code-content">
+            <p><span class="code-keyword">const</span> <span class="code-string">developer</span> = {</p>
+            <p>&nbsp;&nbsp;name: <span class="code-string">"K. Suganthan"</span>,</p>
+            <p>&nbsp;&nbsp;role: <span class="code-string">"BCA 2nd Year Student"</span>,</p>
+            <p>&nbsp;&nbsp;college: <span class="code-string">"TBLM College"</span>,</p>
+            <p>&nbsp;&nbsp;skills: [<span class="code-string">"HTML"</span>, <span class="code-string">"CSS"</span>, <span class="code-string">"JavaScript"</span>],</p>
+            <p>&nbsp;&nbsp;passion: <span class="code-string">"Frontend Web Design & Dev"</span>,</p>
+            <p>&nbsp;&nbsp;problemSolver: <span class="code-keyword">true</span>,</p>
+            <p>&nbsp;&nbsp;currentFocus: <span class="code-string">"Building interactive web apps"</span></p>
+            <p>};</p>
+            <p class="code-comment">// Ready to collaborate and build beautiful experiences</p>
+          </div>
+        </div>
+        
+        <div class="about-details">
+          <h3>Academic & Technical Explorer</h3>
+          <br>
+          <p>
+            I am currently in my <span class="highlight">second year of Bachelor of Computer Applications (BCA)</span> at <span class="highlight">TBLM College</span>. My academic journey has allowed me to build solid fundamentals in computing, while my curiosity has led me to specialize in modern web development.
+          </p>
+          <p>
+            I focus heavily on building semantic structure with HTML, design systems with CSS, and logic-driven user interfaces with vanilla JavaScript. I love creating micro-animations and clean interfaces that behave perfectly across desktop and mobile screens.
+          </p>
+          
+          <div class="info-cards">
+            <div class="info-card glass-card">
+              <h4>2nd Year</h4>
+              <p>BCA Student</p>
+            </div>
+            <div class="info-card glass-card">
+              <h4>100%</h4>
+              <p>Vanilla Stack Focus</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="reveal">
+    <div class="skills-container">
+      <div class="section-header">
+        <h2>My Skills</h2>
+        <p>The technologies I use to build dynamic web solutions</p>
+      </div>
+      
+      <div class="skills-grid">
+        <!-- HTML Card -->
+        <div class="skill-card glass-card">
+          <div class="skill-icon">
+            <i class="fa-brands fa-html5"></i>
+          </div>
+          <h3>HTML5</h3>
+          <p>Semantic markup, structure, forms, SEO fundamentals, and responsive web accessibility guidelines.</p>
+          <div class="skill-bar">
+            <div class="skill-progress" data-level="90%"></div>
+          </div>
+        </div>
+        
+        <!-- CSS Card -->
+        <div class="skill-card glass-card">
+          <div class="skill-icon">
+            <i class="fa-brands fa-css3-alt"></i>
+          </div>
+          <h3>CSS3</h3>
+          <p>Flexbox, Grid layouts, custom variables, responsive web layouts, keyframe transitions, and animations.</p>
+          <div class="skill-bar">
+            <div class="skill-progress" data-level="85%"></div>
+          </div>
+        </div>
+        
+        <!-- JS Card -->
+        <div class="skill-card glass-card">
+          <div class="skill-icon">
+            <i class="fa-brands fa-js"></i>
+          </div>
+          <h3>JavaScript</h3>
+          <p>DOM manipulation, Event handlers, asynchronous APIs, logical states, functional arrays, and interactive scripting.</p>
+          <div class="skill-bar">
+            <div class="skill-progress" data-level="80%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="reveal">
+    <div class="projects-container">
+      <div class="section-header">
+        <h2>Projects Showcase</h2>
+        <p>Some of the recent web projects I have engineered</p>
+      </div>
+      
+      <div class="projects-grid">
+        <!-- Project 1: Code Formatter -->
+        <div class="project-card glass-card">
+          <div class="project-img-wrapper">
+            <div class="project-img-placeholder">
+              <!-- Inline mini SVG graphic for Code Formatter representation -->
+              <svg width="100%" height="100%" viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="200" height="120" fill="#0b0f19"/>
+                <circle cx="20" cy="20" r="4" fill="#ef4444"/>
+                <circle cx="32" cy="20" r="4" fill="#eab308"/>
+                <circle cx="44" cy="20" r="4" fill="#22c55e"/>
+                <!-- Braces mockup -->
+                <text x="60" y="70" fill="#8b5cf6" font-family="monospace" font-size="28" font-weight="bold">{  }</text>
+                <text x="90" y="65" fill="#06b6d4" font-family="monospace" font-size="16">&lt;Code/&gt;</text>
+                <path d="M30 100 H170" stroke="rgba(255,255,255,0.05)" stroke-width="2"/>
+              </svg>
+            </div>
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" target="_blank" aria-label="Github repository"><i class="fa-brands fa-github"></i></a>
+                <a href="#" target="_blank" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">HTML5</span>
+              <span class="project-tag">CSS3</span>
+              <span class="project-tag">JavaScript</span>
+            </div>
+            <h3>Interactive Code Formatter</h3>
+            <p>A web utility that allows developers to paste messy HTML/CSS/JS code and format it instantly with customized indentation options and syntax highlighting guides.</p>
+          </div>
+        </div>
+
+        <!-- Project 2: Personal Portfolio -->
+        <div class="project-card glass-card">
+          <div class="project-img-wrapper">
+            <div class="project-img-placeholder">
+              <svg width="100%" height="100%" viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="200" height="120" fill="#0b0f19"/>
+                <rect x="30" y="30" width="140" height="70" rx="6" fill="rgba(139, 92, 246, 0.05)" stroke="#8b5cf6" stroke-width="1.5"/>
+                <circle cx="100" cy="65" r="15" fill="rgba(6, 182, 212, 0.1)" stroke="#06b6d4" stroke-width="1.5"/>
+                <path d="M 90 90 L 110 90" stroke="#94a3b8" stroke-width="1.5"/>
+                <circle cx="45" cy="45" r="3" fill="#ec4899"/>
+                <circle cx="55" cy="45" r="3" fill="#8b5cf6"/>
+              </svg>
+            </div>
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" target="_blank" aria-label="Github repository"><i class="fa-brands fa-github"></i></a>
+                <a href="#" target="_blank" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">HTML5</span>
+              <span class="project-tag">CSS Grid</span>
+              <span class="project-tag">Animations</span>
+            </div>
+            <h3>Glassmorphic Portfolio</h3>
+            <p>This actual webpage! Clean, modern UI designed with beautiful glass gradients, fully responsive layout grid, floating label input forms, and dynamic JavaScript observers.</p>
+          </div>
+        </div>
+
+        <!-- Project 3: Interactive Quiz App -->
+        <div class="project-card glass-card">
+          <div class="project-img-wrapper">
+            <div class="project-img-placeholder">
+              <svg width="100%" height="100%" viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="200" height="120" fill="#0b0f19"/>
+                <circle cx="100" cy="50" r="25" stroke="rgba(255,255,255,0.03)" stroke-width="8"/>
+                <path d="M 92 60 L 98 65 L 110 52" stroke="#22c55e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <rect x="40" y="90" width="120" height="10" rx="5" fill="rgba(255,255,255,0.05)"/>
+                <rect x="40" y="90" width="80" height="10" rx="5" fill="#06b6d4"/>
+              </svg>
+            </div>
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" target="_blank" aria-label="Github repository"><i class="fa-brands fa-github"></i></a>
+                <a href="#" target="_blank" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">HTML5</span>
+              <span class="project-tag">CSS3</span>
+              <span class="project-tag">JS Logic</span>
+            </div>
+            <h3>JavaScript Quiz Application</h3>
+            <p>An interactive quiz program that runs in the client browser, measuring users' knowledge of HTML, CSS, and JS with timers, instant validations, and animated score dashboards.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION SECTION -->
+  <section id="education" class="reveal">
+    <div class="education-container">
+      <div class="section-header">
+        <h2>My Journey</h2>
+        <p>Education & Academic Milestones</p>
+      </div>
+      
+      <div class="timeline">
+        <!-- Timeline Item 1 -->
+        <div class="timeline-item revealed">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="date">2024 - Present</span>
+            <h3>Bachelor of Computer Applications (BCA)</h3>
+            <div class="institution">TBLM College</div>
+            <p>Currently in the 2nd year. Pursuing core subjects including computer architecture, data structures, database management systems, and object-oriented programming, with a self-guided focus on web frontend tech.</p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 2 -->
+        <div class="timeline-item revealed">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="date">2022 - 2024</span>
+            <h3>Higher Secondary School</h3>
+            <div class="institution">Science & Computer Science Stream</div>
+            <p>Completed with key focus on mathematics, physics, and computer science foundations, laying the bedrock of logic and engineering ideas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="reveal">
+    <div class="contact-container">
+      <div class="section-header">
+        <h2>Get In Touch</h2>
+        <p>Have an idea or project? Let's connect!</p>
+      </div>
+      
+      <div class="contact-grid">
+        <!-- Info boxes -->
+        <div class="contact-info">
+          <!-- Card 1 -->
+          <div class="contact-info-card glass-card">
+            <div class="contact-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Email Me</h3>
+              <p>k.suganthan@email.com</p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="contact-info-card glass-card">
+            <div class="contact-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Location</h3>
+              <p>Tamil Nadu, India</p>
+            </div>
+          </div>
+          
+          <!-- Social Link bar -->
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+        
+        <!-- Interactive Form -->
+        <div class="contact-form-container glass-card">
+          <form class="contact-form" id="portfolio-form" action="#" method="POST">
+            <div class="input-group">
+              <input type="text" id="name" placeholder=" " required autocomplete="name">
+              <label for="name">Your Name</label>
+            </div>
+            <div class="input-group">
+              <input type="email" id="email" placeholder=" " required autocomplete="email">
+              <label for="email">Your Email</label>
+            </div>
+            <div class="input-group">
+              <textarea id="message" placeholder=" " required></textarea>
+              <label for="message">Your Message</label>
+            </div>
+            <button type="submit" class="glass-btn glass-btn-primary">
+              Send Message <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-copyright">
+        &copy; 2026 K. Suganthan. All rights reserved.
+      </div>
+      <div class="footer-links">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll widget and Success Toast Notification -->
+  <button class="scroll-top" id="scroll-top" aria-label="Scroll to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <div class="toast-msg" id="toast-msg">
+    <i class="fa-solid fa-circle-check"></i>
+    <span>Thank you! Your message has been sent successfully.</span>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
